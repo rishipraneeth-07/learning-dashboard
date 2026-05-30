@@ -24,12 +24,12 @@ export default function Sidebar() {
   const [activeItem, setActiveItem] = useState('dashboard')
 
   return (
-    <motion.aside
+    <motion.nav
       animate={{ width: collapsed ? 72 : 240 }}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
       className="relative hidden md:flex flex-col h-screen bg-[#111118] border-r border-white/5 overflow-hidden shrink-0"
     >
-      
+      {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-6 border-b border-white/5">
         <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center shrink-0">
           <GraduationCap size={16} className="text-white" />
@@ -49,6 +49,7 @@ export default function Sidebar() {
         </AnimatePresence>
       </div>
 
+      {/* Nav Items */}
       <nav className="flex flex-col gap-1 p-3 flex-1">
         {navItems.map((item) => {
           const Icon = item.icon
@@ -93,6 +94,7 @@ export default function Sidebar() {
         })}
       </nav>
 
+      {/* Collapse Toggle */}
       <button
         onClick={() => setCollapsed(!collapsed)}
         className="flex items-center justify-center m-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
@@ -103,6 +105,6 @@ export default function Sidebar() {
           <ChevronLeft size={16} className="text-white/40" />
         )}
       </button>
-    </motion.aside>
+    </motion.nav>
   )
 }
