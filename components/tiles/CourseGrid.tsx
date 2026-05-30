@@ -9,9 +9,7 @@ async function getCourses(): Promise<{ data: Course[] | null; error: string | nu
       .select('*')
       .order('created_at', { ascending: true })
 
-    console.log('COUNT:', data?.length)
-    console.log('DATA:', JSON.stringify(data))
-    console.log('ERROR:', JSON.stringify(error))
+    
 
     if (error) return { data: null, error: error.message }
     return { data, error: null }
