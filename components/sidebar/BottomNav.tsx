@@ -15,7 +15,7 @@ export default function BottomNav() {
   const [activeItem, setActiveItem] = useState('dashboard')
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#111118] border-t border-white/5 flex items-center justify-around px-2 py-3">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#110e00] border-t border-amber-900/20 flex items-center justify-around px-2 py-3">
       {navItems.map((item) => {
         const Icon = item.icon
         const isActive = activeItem === item.id
@@ -29,16 +29,16 @@ export default function BottomNav() {
             {isActive && (
               <motion.div
                 layoutId="activeBottomNav"
-                className="absolute inset-0 bg-violet-600/20 rounded-lg"
+                className="absolute inset-0 bg-amber-500/15 rounded-lg"
                 transition={{ type: 'spring', stiffness: 400, damping: 30 }}
               />
             )}
             <Icon
               size={20}
-              className={`relative z-10 ${isActive ? 'text-violet-400' : 'text-white/40'}`}
+              className={`relative z-10 ${isActive ? 'text-amber-400' : 'text-white/40'}`}
             />
             <span
-              className={`relative z-10 text-xs ${isActive ? 'text-violet-400' : 'text-white/40'}`}
+              className={`relative z-10 text-xs ${isActive ? 'text-amber-400' : 'text-white/40'}`}
             >
               {item.label}
             </span>
