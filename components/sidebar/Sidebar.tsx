@@ -27,12 +27,12 @@ export default function Sidebar() {
     <motion.nav
       animate={{ width: collapsed ? 72 : 240 }}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-      className="relative hidden md:flex flex-col h-screen bg-[#111118] border-r border-white/5 overflow-hidden shrink-0"
+      className="relative hidden md:flex flex-col h-screen bg-[#110e00] border-r border-amber-900/20 overflow-hidden shrink-0"
     >
-  
-      <div className="flex items-center gap-3 px-4 py-6 border-b border-white/5">
-        <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center shrink-0">
-          <GraduationCap size={16} className="text-white" />
+   
+      <div className="flex items-center gap-3 px-4 py-6 border-b border-amber-900/20">
+        <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center shrink-0">
+          <GraduationCap size={16} className="text-black" />
         </div>
         <AnimatePresence>
           {!collapsed && (
@@ -63,14 +63,14 @@ export default function Sidebar() {
               {isActive && (
                 <motion.div
                   layoutId="activeNav"
-                  className="absolute inset-0 bg-violet-600/20 rounded-lg border border-violet-500/30"
+                  className="absolute inset-0 bg-amber-500/15 rounded-lg border border-amber-500/30"
                   transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                 />
               )}
               <Icon
                 size={18}
                 className={`shrink-0 relative z-10 transition-colors ${
-                  isActive ? 'text-violet-400' : 'text-white/40'
+                  isActive ? 'text-amber-400' : 'text-white/40'
                 }`}
               />
               <AnimatePresence>
@@ -93,15 +93,14 @@ export default function Sidebar() {
         })}
       </nav>
 
-  
       <button
         onClick={() => setCollapsed(!collapsed)}
-        className="flex items-center justify-center m-3 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
+        className="flex items-center justify-center m-3 p-2 rounded-lg bg-white/5 hover:bg-amber-500/10 transition-colors"
       >
         {collapsed ? (
-          <ChevronRight size={16} className="text-white/40" />
+          <ChevronRight size={16} className="text-amber-400/60" />
         ) : (
-          <ChevronLeft size={16} className="text-white/40" />
+          <ChevronLeft size={16} className="text-amber-400/60" />
         )}
       </button>
     </motion.nav>
