@@ -30,10 +30,10 @@ export default function CourseCard({ course, index }: CourseCardProps) {
       }}
       whileHover={{
         scale: 1.02,
-        boxShadow: '0 0 20px rgba(139, 92, 246, 0.15)',
+        boxShadow: '0 0 20px rgba(217, 119, 6, 0.15)',
         transition: { type: 'spring', stiffness: 300, damping: 20 },
       }}
-      className="relative rounded-2xl p-5 bg-[#111118] border border-white/5 overflow-hidden flex flex-col gap-4 cursor-pointer group"
+      className="relative rounded-2xl p-5 bg-[#110e00] border border-amber-900/20 overflow-hidden flex flex-col gap-4 cursor-pointer"
     >
 
       <div
@@ -43,25 +43,27 @@ export default function CourseCard({ course, index }: CourseCardProps) {
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-br from-violet-600/10 via-transparent to-indigo-600/5 pointer-events-none" />
 
- 
+      <div className="absolute inset-0 bg-gradient-to-br from-amber-600/10 via-transparent to-yellow-600/5 pointer-events-none" />
+
+
       <motion.div
         className="absolute inset-0 rounded-2xl pointer-events-none border border-transparent"
-        whileHover={{ borderColor: 'rgba(139, 92, 246, 0.4)' }}
+        whileHover={{ borderColor: 'rgba(217, 119, 6, 0.4)' }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
       />
 
-      <div className="relative w-10 h-10 rounded-xl bg-violet-600/20 flex items-center justify-center">
-        <DynamicIcon name={course.icon_name} size={18} className="text-violet-400" />
+      <div className="relative w-10 h-10 rounded-xl bg-amber-600/20 flex items-center justify-center">
+        <DynamicIcon name={course.icon_name} size={18} className="text-amber-400" />
       </div>
 
-     
+  
       <div className="relative flex-1">
         <h3 className="text-white font-semibold text-sm leading-snug">
           {course.title}
         </h3>
       </div>
+
 
       <div className="relative">
         <div className="flex justify-between items-center mb-2">
