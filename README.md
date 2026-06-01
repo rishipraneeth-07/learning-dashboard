@@ -84,5 +84,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+### Actual Website
+https://learning-dashboard-roan.vercel.app/dashboard
+
 ## Environment Variables
 See `.env.example` for required variables.
