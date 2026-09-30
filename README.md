@@ -13,6 +13,30 @@ A futuristic, animated student dashboard built with Next.js App Router, Supabase
 - **TypeScript** (type safety)
 - **Lucide React** (icons)
 
+## Project Structure
+
+```text
+learning-dashboard/
+├── public/
+│   └── screenshots/
+├── src/
+│   ├── app/
+│   │   ├── dashboard/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── Sidebar.tsx
+│   │   ├── CourseGrid.tsx
+│   │   ├── CourseCard.tsx
+│   │   ├── ActivityTile.tsx
+│   │   ├── HeroTile.tsx
+│   │   └── CourseSkeleton.tsx
+│   └── lib/
+│       └── supabase.ts
+├── .env.example
+├── package.json
+└── README.md
+
 ## Features
 - Dark mode Bento Grid layout
 -  Staggered entrance animations with spring physics
@@ -94,3 +118,4 @@ See `.env.example` for required variables.
 ### Project Status
 
 This project is currently under development. Core features have been implemented, and additional functionality, improvements, and bug fixes are being worked on.
+
