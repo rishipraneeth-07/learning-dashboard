@@ -1,6 +1,5 @@
 # LearnHub — Student Learning Dashboard
 
-A futuristic, animated student dashboard built with Next.js App Router, Supabase, Tailwind CSS, and Framer Motion.
 
 ## Live Demo
 [Deployed on Vercel](#) <!-- add your vercel link after deployment -->
