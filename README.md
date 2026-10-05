@@ -114,7 +114,5 @@ https://learning-dashboard-roan.vercel.app/dashboard
 See `.env.example` for required variables.
 
 
-### Project Status
 
-This project is currently under development. Core features have been implemented, and additional functionality, improvements, and bug fixes are being worked on.
 
