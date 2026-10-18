@@ -4,13 +4,7 @@
 ## Live Demo
 [Deployed on Vercel](#) <!-- add your vercel link after deployment -->
 
-## Tech Stack
-- **Next.js 16** (App Router)
-- **Supabase** (PostgreSQL database)
-- **Tailwind CSS** (styling)
-- **Framer Motion** (animations)
-- **TypeScript** (type safety)
-- **Lucide React** (icons)
+
 
 ## Project Structure
 
