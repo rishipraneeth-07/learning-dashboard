@@ -49,8 +49,6 @@ learning-dashboard/
 ### Data Fetching
 Course data is fetched in `CourseGrid.tsx` using the Supabase JS client inside an async Server Component. React `<Suspense>` wraps it with `CourseSkeleton.tsx` as the fallback, showing pulsing skeleton cards while data loads.
 
-### Animation Strategy
-All animations use `transform` and `opacity` exclusively to avoid layout shifts and trigger GPU acceleration. Spring physics (`stiffness: 300, damping: 30`) give a natural, non-linear feel. The sidebar uses Framer Motion's `layoutId` for the sliding active highlight.
 
 
 
