@@ -52,10 +52,7 @@ Course data is fetched in `CourseGrid.tsx` using the Supabase JS client inside a
 ### Animation Strategy
 All animations use `transform` and `opacity` exclusively to avoid layout shifts and trigger GPU acceleration. Spring physics (`stiffness: 300, damping: 30`) give a natural, non-linear feel. The sidebar uses Framer Motion's `layoutId` for the sliding active highlight.
 
-### Responsive Design
-- **Desktop (>1024px)** — Full 3-column Bento grid with expanded sidebar
-- **Tablet (768–1024px)** — 2-column grid, sidebar collapses to icons
-- **Mobile (<768px)** — Single column stack, sidebar replaced by bottom navigation bar
+
 
 ## Getting Started
 
