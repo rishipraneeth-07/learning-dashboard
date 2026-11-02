@@ -1,8 +1,6 @@
 # LearnHub — Student Learning Dashboard
 
 
-## Live Demo
-[Deployed on Vercel](#) <!-- add your vercel link after deployment -->
 
 
 
