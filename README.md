@@ -94,8 +94,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-### Actual Website
-https://learning-dashboard-roan.vercel.app/dashboard
+
 
 
 
