@@ -92,7 +92,6 @@ create policy "Allow public read" on courses for select to anon using (true);
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
 
 
 
